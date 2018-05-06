@@ -1,5 +1,6 @@
 package com.example.it.jhotel_android_raudina;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -18,7 +19,10 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Hotel> listHotel= new ArrayList<>();
     private ArrayList<Room> listRoom = new ArrayList<>();
     private HashMap<Hotel, ArrayList<Room>> childMapping = new HashMap<>();
+    private int currentUserId;
 
+    Intent mIntent = getIntent();
+    currentUserId = mIntent.getIntExtra("id customer",0);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

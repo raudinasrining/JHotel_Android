@@ -4,6 +4,8 @@
     android:layout_height="55dip"
     android:orientation="vertical" >
 
+
+
     <TextView
         android:id="@+id/child"
         android:layout_width="fill_parent"
